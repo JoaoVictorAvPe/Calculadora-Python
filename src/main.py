@@ -4,10 +4,12 @@ from PySide6.QtGui import QIcon
 from main_window import MainWindow
 from display import Display
 from info import Info
+from styles import setupTheme
 from utils import ICON_PATH
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
+    setupTheme(app)
 
     window = MainWindow()
 
