@@ -18,3 +18,6 @@ class MainWindow(QMainWindow):
 
     def addWidgetToVBoxLayout(self, widget: QWidget) -> None:
         self.vbox_layout.addWidget(widget)
+
+    def addButtonsToGridLayout(self, widget: QWidget) -> None:
+        ...

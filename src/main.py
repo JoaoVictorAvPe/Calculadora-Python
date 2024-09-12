@@ -4,6 +4,7 @@ from PySide6.QtGui import QIcon
 from main_window import MainWindow
 from display import Display
 from info import Info
+from buttons import Button, ButtonsGrid
 from styles import setupTheme
 from utils import ICON_PATH
 
@@ -19,6 +20,10 @@ if __name__ == "__main__":
     display = Display()
     display.setPlaceholderText('Digite um texto')
     window.addWidgetToVBoxLayout(display)
+
+    buttons_grid = ButtonsGrid()
+    window.vbox_layout.addLayout(buttons_grid)
+
 
     icon = QIcon(str(ICON_PATH))
     window.setWindowIcon(icon)
