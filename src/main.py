@@ -18,10 +18,9 @@ if __name__ == "__main__":
     window.addWidgetToVBoxLayout(info)
 
     display = Display()
-    display.setPlaceholderText('Digite um texto')
     window.addWidgetToVBoxLayout(display)
 
-    buttons_grid = ButtonsGrid()
+    buttons_grid = ButtonsGrid(display)
     window.vbox_layout.addLayout(buttons_grid)
 
 
